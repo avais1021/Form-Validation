@@ -56,46 +56,46 @@
 
             var name = document.forms['myForm']['fname'].value;
             if(name.length < 3){
-                seterror ("name","Length of name is too short");
+                seterror ("name","*Length of name is too short");
                 returnval = false;
             }
             if(name.length == 0){
-                seterror ("name","Name is required");
+                seterror ("name","*Name is required");
                 returnval = false;
             }
 
             var email = document.forms['myForm']['femail'].value;
                 if(email.length > 25){
-                    seterror ("email", "Email length is too long");
+                    seterror ("email", "*Email length is too long");
                     returnval = false;
                 }   
                 if(email.length == 0){
-                    seterror ("email", "Email is required");
+                    seterror ("email", "*Email is required");
                     returnval = false;
                 }   
 
             var phone = document.forms['myForm']['fphone'].value;
                 if(phone.length != 10){
-                    seterror("phone", "Phone number should be 10 digits");
+                    seterror("phone", "*Phone number should be 10 digits");
                     returnval = false;
                 }
                 if (phone.length == 0){
-                    seterror("phone","Phone number is required");
+                    seterror("phone","*Phone number is required");
                 }
 
             var password = document.forms['myForm']['fpass'].value;
             if(password.length < 6) {
-                seterror("pass","Password length is should be 5 characters a long")
+                seterror("pass","*Password length is should be 5 characters a long")
                 returnval = false;
             }
             if (password.length == 0){
-                seterror("pass","Password is required");
+                seterror("pass","*Password is required");
                 returnval = false;
             }
 
             var cPassword = document.forms['myForm']['fcpass'].value   ;
                 if(cPassword.length != password.length){
-                    seterror("cpass","Password is not match");
+                    seterror("cpass","*Password is not match");
                     returnval = false;
                 }
                 

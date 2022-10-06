@@ -45,3 +45,20 @@ input{
     font-weight: bold;
     font-size: 18px;
 }
+
+span{
+    animation-name: sample;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 2s;
+}
+
+@keyframes sample {
+    form{
+        color: red;
+    }
+    to{
+        color: transparent;
+    }
+}
