@@ -67,3 +67,15 @@ input::placeholder{
         color: transparent;
     }
 }
+
+/* .s_img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.s_img img {
+    width: 100%;
+    height: 100%;
+} */

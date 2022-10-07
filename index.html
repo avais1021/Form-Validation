@@ -13,7 +13,7 @@
 
     <h1 style = "margin-bottom: 10px;">Form Validation</h1>
 
-    <form action="" name="myForm" onsubmit="return validateForm ()">
+    <form id="Form_height" action="" name="myForm" onsubmit="return validateForm ()">
         <div class="formdesign" id="name">
             Name : <input type="text" name="fname" placeholder="Minimum length is 4 characters"> <b><span class="form_error">  </span></b>
         </div>
@@ -24,13 +24,17 @@
             Phone : <input type="number" name="fphone" placeholder="Phone number should be 10 digits"> <b><span class="form_error">  </span></b>
         </div>
         <div class="formdesign" id="pass">
-            Password : <input type="password" name="fpass" placeholder="Minimum length is 3 characters"> <b><span class="form_error">  </span></b>
+            Password : <input type="password" name="fpass" placeholder="Minimum length is 6 characters"> <b><span class="form_error">  </span></b>
         </div>
         <div class="formdesign" id="cpass">
             Confirm password : <input type="password" name="fcpass" placeholder="Password should be match"> <b><span class="form_error">  </span></b>
         </div>
         <input type="submit" value="Submit" class="but">
     </form>
+
+    <!-- <div class="s_img">
+        <img src="successs.png" alt="">
+    </div> -->
 
     <!-- *this is an error -->
 
@@ -94,20 +98,27 @@
             }
 
             var cPassword = document.forms['myForm']['fcpass'].value   ;
-                if(cPassword.length != password.length){
-                    seterror("cpass","*Password is not match");
-                    returnval = false;
-                }
-                
-                
-
-
-
-                return  returnval ;
+            if(cPassword.length != password.length){
+                seterror("cpass","*Password is not match");
+                returnval = false;
+            }
+            
+            
+            return  returnval ;
+            after ();
+            
         }
-
-
-    </script>
+        
+        
+        // function after () {
+            
+        //     const img = document.getElementsByClassName("s_img")[0];
+        //     img.setAttribute("style","display: block;")
+        //     const form = document.getElementById("Form_height");
+        //     form.setAttribute("style", "height: 60vh;");
+        //         }
+                
+        </script>
 </body>
 
 </html>
